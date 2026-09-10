@@ -1,11 +1,12 @@
 import React from 'react'
 
-function Card() {
+function Card({prod,key}) {
 	return (
 		<>
 		<div className='prod-card'>
-			<p>Product Name</p>
-			<p>Price</p>
+			<p>{prod.title}</p>
+			<p>{prod.price}</p>
+			<p>{prod.rating.rate}</p>
 			<button>Add to Cart</button>
 		</div>
 		</>
