@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 4.7,
+        "count": 154
+      }
+    },
+    {
+      "id": 2,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 3.5,
+        "count": 89
+      }
+    },
+    {
+      "id": 3,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 4.2,
+        "count": 276
+      }
+    },
+    {
+      "id": 4,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 2.8,
+        "count": 47
+      }
+    },
+    {
+      "id": 5,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 4.9,
+        "count": 632
+      }
+    },
+    {
+      "id": 6,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 3.9,
+        "count": 118
+      }
+    },
+    {
+      "id": 7,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 4.4,
+        "count": 205
+      }
+    },
+    {
+      "id": 8,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 2.6,
+        "count": 39
+      }
+    },
+    {
+      "id": 9,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 4.1,
+        "count": 321
+      }
+    },
+    {
+      "id": 10,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 3.7,
+        "count": 142
+      }
+    },
+    {
+      "id": 11,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 4.8,
+        "count": 517
+      }
+    },
+    {
+      "id": 12,
+      "title": "",
+      "price": 0,
+      "category": "",
+      "image": "",
+      "status": false,
+      "rating": {
+        "rate": 3.2,
+        "count": 74
+      }
+    }
+  ]
+}
