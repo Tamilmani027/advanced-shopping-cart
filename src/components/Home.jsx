@@ -8,13 +8,11 @@ import CardForCart from './CardForCart'
 function Home() {
 	return (
 		<div>
-			<Header/>
+			<Header />
 			<div className='banner-sec'>
-					<p>Banner</p>
+				<p>Banner</p>
 			</div>
-			<ProductContainer/>
-			<Cart/>
-			<CardForCart/>
+			<ProductContainer />
 		</div>
 	)
 }
