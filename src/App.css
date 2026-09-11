@@ -85,12 +85,12 @@
 
 .cardfor-cart{
   display: flex;
-  flex-direction: column;
   gap:20px;
   padding:10px;
   border:2px solid black;
   border-radius: 10px;
   margin:10px;
+  width: 100%;
 }
 
 .cardfor-cart img{
@@ -99,10 +99,17 @@
   height:100px;
 }
 
-.cartfor-cart-container{
+.cartCard-details{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap:20px;
-   
+  flex: 1;
+}
+
+.cart-data{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  width: 100%;
 }
 
