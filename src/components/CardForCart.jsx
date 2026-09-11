@@ -3,9 +3,9 @@ import React from 'react'
 function CardForCart() {
 	return (
 		<>
-		<div className='cardfor-cart'>
-				<div>
-					<img ></img>
+			<div className='cardfor-cart'>
+				<div className='cart-img'>
+					<img src='https://picsum.photos/250' alt='prod-img'></img>
 				</div>
 				<div className='cartCard-details'>
 					<div className='cart-data'>
