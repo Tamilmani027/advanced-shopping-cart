@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "title": "Apple",
+      "title": "White",
       "price": 500,
       "category": "",
-      "image": "https://picsum.photos/251",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/M75036s8.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 4.7,
@@ -14,10 +14,10 @@
     },
     {
       "id": 2,
-      "title": "",
-      "price": 1000,
+      "title": "Black",
+      "price": 600,
       "category": "",
-      "image": "https://picsum.photos/252",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/124922s.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 3.5,
@@ -26,10 +26,10 @@
     },
     {
       "id": 3,
-      "title": "",
-      "price": 600,
+      "title": "Blue Navy Slim Fit",
+      "price": 650,
       "category": "",
-      "image": "https://picsum.photos/253",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/194643s.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 4.2,
@@ -38,10 +38,10 @@
     },
     {
       "id": 4,
-      "title": "",
-      "price": 300,
+      "title": "Grey",
+      "price": 400,
       "category": "",
-      "image": "https://picsum.photos/254",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/132180s5.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 2.8,
@@ -50,10 +50,10 @@
     },
     {
       "id": 5,
-      "title": "",
-      "price": 400,
+      "title": "Blue Ice Slim Fit",
+      "price": 500,
       "category": "",
-      "image": "https://picsum.photos/255",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/W71794s5.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 4.9,
@@ -62,10 +62,10 @@
     },
     {
       "id": 6,
-      "title": "",
+      "title": "Green Moss Regular Fit",
       "price": 750,
       "category": "",
-      "image": "https://picsum.photos/256",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/W71804s3.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 3.9,
@@ -74,10 +74,10 @@
     },
     {
       "id": 7,
-      "title": "",
+      "title": "Yellow Regular Fit",
       "price": 800,
       "category": "",
-      "image": "https://picsum.photos/257",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/G52338s6.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 4.4,
@@ -86,10 +86,10 @@
     },
     {
       "id": 8,
-      "title": "",
-      "price": 200,
+      "title": "Red Burgundy Regular Fit",
+      "price": 600,
       "category": "",
-      "image": "https://picsum.photos/258",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/U29642s4.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 2.6,
@@ -98,10 +98,10 @@
     },
     {
       "id": 9,
-      "title": "",
-      "price":100,
+      "title": "Brown camel Slim Fit",
+      "price": 700,
       "category": "",
-      "image": "https://picsum.photos/259",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/V16207s5.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 4.1,
@@ -110,10 +110,10 @@
     },
     {
       "id": 10,
-      "title": "",
-      "price": 450,
+      "title": "Purple Lilac Regular Fit",
+      "price": 650,
       "category": "",
-      "image": "https://picsum.photos/260",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/W03863s5.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 3.7,
@@ -122,10 +122,10 @@
     },
     {
       "id": 11,
-      "title": "",
-      "price":350,
+      "title": "Black Regular Fit Long Sleeve",
+      "price": 550,
       "category": "",
-      "image": "https://picsum.photos/261",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/198275s.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 4.8,
@@ -134,10 +134,10 @@
     },
     {
       "id": 12,
-      "title": "",
-      "price":550,
+      "title": "Burgundy Red Regular Fit Long Sleeve",
+      "price": 550,
       "category": "",
-      "image": "https://picsum.photos/262",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/G42478s5.jpg?im=Resize,width=750",
       "status": false,
       "rating": {
         "rate": 3.2,
