@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "title": "",
-      "price": 0,
+      "title": "Apple",
+      "price": 500,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/251",
       "status": false,
       "rating": {
         "rate": 4.7,
@@ -15,9 +15,9 @@
     {
       "id": 2,
       "title": "",
-      "price": 0,
+      "price": 1000,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/252",
       "status": false,
       "rating": {
         "rate": 3.5,
@@ -27,9 +27,9 @@
     {
       "id": 3,
       "title": "",
-      "price": 0,
+      "price": 600,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/253",
       "status": false,
       "rating": {
         "rate": 4.2,
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "title": "",
-      "price": 0,
+      "price": 300,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/254",
       "status": false,
       "rating": {
         "rate": 2.8,
@@ -51,9 +51,9 @@
     {
       "id": 5,
       "title": "",
-      "price": 0,
+      "price": 400,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/255",
       "status": false,
       "rating": {
         "rate": 4.9,
@@ -63,9 +63,9 @@
     {
       "id": 6,
       "title": "",
-      "price": 0,
+      "price": 750,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/256",
       "status": false,
       "rating": {
         "rate": 3.9,
@@ -75,9 +75,9 @@
     {
       "id": 7,
       "title": "",
-      "price": 0,
+      "price": 800,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/257",
       "status": false,
       "rating": {
         "rate": 4.4,
@@ -87,9 +87,9 @@
     {
       "id": 8,
       "title": "",
-      "price": 0,
+      "price": 200,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/258",
       "status": false,
       "rating": {
         "rate": 2.6,
@@ -99,9 +99,9 @@
     {
       "id": 9,
       "title": "",
-      "price": 0,
+      "price":100,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/259",
       "status": false,
       "rating": {
         "rate": 4.1,
@@ -111,9 +111,9 @@
     {
       "id": 10,
       "title": "",
-      "price": 0,
+      "price": 450,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/260",
       "status": false,
       "rating": {
         "rate": 3.7,
@@ -123,9 +123,9 @@
     {
       "id": 11,
       "title": "",
-      "price": 0,
+      "price":350,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/261",
       "status": false,
       "rating": {
         "rate": 4.8,
@@ -135,9 +135,9 @@
     {
       "id": 12,
       "title": "",
-      "price": 0,
+      "price":550,
       "category": "",
-      "image": "https://picsum.photos/250",
+      "image": "https://picsum.photos/262",
       "status": false,
       "rating": {
         "rate": 3.2,

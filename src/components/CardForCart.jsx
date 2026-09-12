@@ -1,20 +1,46 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import MyContext from './MyContext';
 
-function CardForCart() {
+function CardForCart({prod}) {
+	const [prodTotal,setprodTotal]=useState(prod.price);
+	const [selectedValue,setSelectedValue]=useState(1);
+	const { totalAmnt,settotalAmnt,settotalQnty,totalQnty} = useContext(MyContext);
+
+	
+	const HandleChange=(e)=>{
+		const qty=Number(e.target.value);
+		setSelectedValue(qty);
+		const newTotal=prod.price*qty;
+		setprodTotal(newTotal);
+		settotalAmnt(totalAmnt - prodTotal + newTotal); 
+  	settotalQnty(totalQnty - selectedValue + qty); 
+	};
+
 	return (
+
 		<>
 			<div className='cardfor-cart'>
 				<div className='cart-img'>
-					<img src='https://picsum.photos/250' alt='prod-img'></img>
+					<img src={prod.image} alt='prod-img'></img>
 				</div>
 				<div className='cartCard-details'>
 					<div className='cart-data'>
-						<p>Prod Title</p>
-						<p>prod price</p>
+						<p>{prod.title}</p>
+						<p>{prod.price}</p>
 					</div>
 					<p>In Stock</p>
 					<div className='cart-data'>
-						<select>
+						{ selectedValue===10 ? (
+							<label>
+								Enter quantity:
+								<input type='number' 
+								value={selectedValue}
+								onChange={HandleChange}/>
+							</label>
+						):
+						(
+							<select value={selectedValue}
+						onChange={HandleChange}>
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -26,10 +52,13 @@ function CardForCart() {
 							<option>9</option>
 							<option>10</option>
 						</select>
+						)
+						}
+						
 					</div>
 					<div className='cart-data'>
 						<p>Total</p>
-						<p>10</p>
+						<p>{prodTotal}</p>
 					</div>
 				</div>
 			</div>

@@ -4,14 +4,13 @@ import Card from './Card'
 import ProductContainer from './ProductContainer'
 import Cart from './Cart'
 import CardForCart from './CardForCart'
+import Banner from './Banner'
 
 function Home() {
 	return (
 		<div>
 			<Header />
-			<div className='banner-sec'>
-				<p>Banner</p>
-			</div>
+			<Banner/>
 			<ProductContainer />
 		</div>
 	)

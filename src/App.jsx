@@ -6,16 +6,24 @@ import './App.css'
 import Home from './components/Home'
 import Cart from './components/Cart'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import MyContext from './components/MyContext';
 
 function App() {
-  const [addedCard, setaddedCart] = useState([])
+  const [toCart, setToCart] = useState(false);
+  const [addedCart, setaddedCart] = useState([]);
+  const [cartTotal, setcartTotal]=useState(0);
+  const [totalAmnt,settotalAmnt]=useState(0);
+  const [totalQnty,settotalQnty]=useState(0);
 
   const addtoCart = (prod) => {
-    setaddedCart([...addedCard, { ...prod }])
+    setaddedCart([...addedCart, { ...prod }])
+    setcartTotal(cartTotal+1);
   }
 
-  const removefromCart = (prod) => {
-    setaddedCart(addedCard.filter((item) => item.id !== prod.id))
+  const removefromCart = (id) => {
+    setaddedCart(addedCart.filter((item) => item.id !== id))
+    setcartTotal(cartTotal-1);
+
   }
 
 
@@ -23,10 +31,6 @@ function App() {
     {
       path: '/',
       element: <Home
-        addedCard={addedCard}
-        setaddedCart={setaddedCart}
-        addtoCart={addtoCart}
-        removefromCart={removefromCart}
       />
     },
     {
@@ -37,7 +41,10 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <MyContext.Provider value={{totalAmnt,settotalAmnt,toCart, setToCart, addedCart, setaddedCart, addtoCart, removefromCart,cartTotal,totalQnty,settotalQnty}}>
+              <RouterProvider router={router} />
+      </MyContext.Provider>
+      
     </>
   )
 }

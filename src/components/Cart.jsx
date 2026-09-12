@@ -1,19 +1,29 @@
 import React from 'react'
 import CardForCart from './CardForCart'
+import { useContext } from 'react';
+import MyContext from './MyContext';
 
 function Cart() {
+	  const { totalAmnt,settotalAmnt, addedCart,totalQnty} = useContext(MyContext);
+
 	return (
 		<>
-			<CardForCart />
+		<div>
+					{
+			addedCart.map((prod)=>(
+				<CardForCart prod={prod} key={prod.id}/>
+			))
+			}
+		</div>
 			<footer>
 				<div className='bill-details'>
 					<div className='cart-bill'>
 						<p>SUBTOTAL:</p>
-						<p>sub total</p>
+						<p>{totalAmnt}</p>
 					</div>
 					<div className='cart-bill'>
 						<p>TOTAL QUANTITY:</p>
-						<p>total quantity</p>
+						<p>{totalQnty}</p>
 					</div>
 					<div className='cart-bill'>
 						<p>SHIPPING:</p>
@@ -21,7 +31,7 @@ function Cart() {
 					</div>
 					<div className='cart-bill'>
 						<p>TOTAL:</p>
-						<p>total</p>
+						<p>{totalAmnt}</p>
 					</div>
 				</div>
 			</footer>

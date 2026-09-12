@@ -9,7 +9,7 @@ function ProductContainer() {
 		<div className='prod-container'>
 					{
 			productsdata.products.map((prod,index)=>(
-				<Card prod={prod} key={index}/>
+				<Card prod={prod} id={prod.id}/>
 			))
 			}
 		</div>

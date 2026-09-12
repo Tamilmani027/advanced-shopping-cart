@@ -1,18 +1,34 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from "react";
+import MyContext from "./MyContext";
 
-function Card({ prod, key }) {
-	const [toCart, setToCart] = useState(false)
-	return (
-		<>
-			<div className='prod-card'>
-				<img src={prod.image} alt='prod-img' key={key}></img>
-				<p>{prod.title}</p>
-				<p>{prod.price}</p>
-				<p>{prod.rating.rate}</p>
-				<button type='button' onClick={() => setToCart(!toCart)}>{toCart ? 'Remove from Cart' : 'Add to Cart'}</button>
-			</div>
-		</>
-	)
+function Card({ prod, id }) {
+  const {prodTotal,setprodTotal,settotalAmnt,totalAmnt,addedCart,addtoCart, removefromCart,totalQnty,settotalQnty } = useContext(MyContext);
+	const isInCart = addedCart.some((item) => item.id === prod.id);
+    
+	const handleClick = () => {
+    if (isInCart) {
+      removefromCart(prod.id);
+			settotalAmnt(totalAmnt-prodTotal);
+			settotalQnty(totalQnty-1);
+
+    } else {
+      addtoCart(prod);
+			settotalAmnt(totalAmnt+prod.price);
+			settotalQnty(totalQnty+1)
+    }
+
+  };
+
+  return (
+    <div className="prod-card">
+      <img src={prod.image} alt="prod-img" />
+      <h4>{prod.title}</h4>
+      <h4>Price:{prod.price}</h4>
+      <button type="button" onClick={handleClick}>
+        {isInCart ? "Remove from Cart" : "Add to Cart"}
+      </button>
+    </div>
+  );
 }
 
-export default Card
+export default Card;
