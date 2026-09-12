@@ -116,7 +116,7 @@ span {
 .prod-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   justify-content: space-evenly;
   padding: 5px;
