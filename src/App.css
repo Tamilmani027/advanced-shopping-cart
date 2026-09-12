@@ -23,8 +23,8 @@
   padding-left: 200px;
 }
 
-.header-cartbtn:hover{
-   cursor: pointer;
+.header-cartbtn:hover {
+  cursor: pointer;
   transition: all ease 0.2s;
   transform: scale(1.05);
 }
@@ -32,7 +32,7 @@
 
 .header-cartbtn button {
   display: flex;
-  gap:10px;
+  gap: 10px;
   border: none;
   padding: 10px;
   width: 80px;
@@ -45,11 +45,11 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 22px;        
+  width: 22px;
   height: 22px;
   background: black;
   color: white;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
 
@@ -103,21 +103,21 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: 200px;
   margin: auto;
   margin-top: 30px;
 }
 
-.banner-sec img{
-  display: flex;
-  flex-wrap: wrap;
-  width:900px;
-  height:200px;
+.banner-sec img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-
-
 }
 
 .cart-bill {
@@ -136,10 +136,10 @@ span {
 .cardfor-cart {
   display: flex;
   gap: 20px;
-  padding: 10px;
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding-right: 10px;
 }
 
 
@@ -160,8 +160,8 @@ span {
 }
 
 .cart-img img {
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 180px;
   object-fit: cover;
   display: block;
   border-radius: 12px;
@@ -171,9 +171,163 @@ span {
   flex-shrink: 0;
 }
 
-footer{
+footer {
   position: fixed;
-  bottom:0;
-  width:100%;
-  background:#f1f1f1;
+  bottom: 0;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+/* =============================================
+   RESPONSIVE – Tablet  (max-width: 768px)
+   ============================================= */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header-main {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .header-cartbtn {
+    padding-left: 0;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  /* Banner */
+  .banner-sec {
+    height: auto;
+    padding: 0 16px;
+    margin-top: 20px;
+  }
+
+  .banner-sec img {
+    height: 150px;
+  }
+
+  /* Product grid */
+  .prod-container {
+    gap: 24px;
+    margin: 16px;
+    padding: 8px;
+  }
+
+  .prod-card {
+    width: 220px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .prod-card img {
+    width: 220px;
+    height: 120px;
+  }
+
+  /* Cart cards */
+  .cardfor-cart {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .cartCard-details {
+    padding: 10px;
+  }
+
+  .cart-img img {
+    width: 180px;
+    height: 150px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 4px 0;
+  }
+}
+
+/* =============================================
+   RESPONSIVE – Mobile  (max-width: 480px)
+   ============================================= */
+@media (max-width: 480px) {
+
+  /* Header */
+  .header-main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .header-cartbtn {
+    padding-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header-cartbtn button {
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  /* Banner */
+  .banner-sec {
+    padding: 0 12px;
+    margin-top: 14px;
+  }
+
+  .banner-sec img {
+    height: 110px;
+    border-radius: 10px;
+  }
+
+  /* Product grid – single column on small phones */
+  .prod-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 10px;
+    padding: 6px;
+  }
+
+  .prod-card {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding-bottom: 16px;
+  }
+
+  .prod-card img {
+    width: 100%;
+    height: 160px;
+  }
+
+  /* Cart cards – stack vertically on mobile */
+  .cardfor-cart {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .cart-img {
+    width: 100%;
+  }
+
+  .cart-img img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .cartCard-details {
+    gap: 8px;
+  }
+
+  /* Bill footer text */
+  .bill-details {
+    gap: 12px;
+    padding: 8px 12px;
+  }
 }

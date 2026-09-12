@@ -11,10 +11,11 @@ function Card({ prod, id }) {
 			settotalAmnt(totalAmnt-prodTotal);
 			settotalQnty(totalQnty-1);
 
-    } else {
+    } 
+		else {
       addtoCart(prod);
 			settotalAmnt(totalAmnt+prod.price);
-			settotalQnty(totalQnty+1)
+			settotalQnty(totalQnty+1);
     }
 
   };

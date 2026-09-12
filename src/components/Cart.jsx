@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import MyContext from './MyContext';
 
 function Cart() {
-	  const { totalAmnt,settotalAmnt, addedCart,totalQnty} = useContext(MyContext);
+	  const { totalAmnt, addedCart,totalQnty} = useContext(MyContext);
 
 	return (
 		<>
