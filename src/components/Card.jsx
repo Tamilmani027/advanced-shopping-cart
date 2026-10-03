@@ -1,23 +1,18 @@
-import React, { useContext, useState } from "react";
-import MyContext from "./MyContext";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart, removeFromCart } from "../slice/productSlice";
 
 function Card({ prod, id }) {
-  const { prodTotal, setprodTotal, settotalAmnt, totalAmnt, addedCart, addtoCart, removefromCart, totalQnty, settotalQnty } = useContext(MyContext);
+  const dispatch = useDispatch();
+  const addedCart = useSelector((state) => state.product.addedCart);
   const isInCart = addedCart.some((item) => item.id === prod.id);
 
   const handleClick = () => {
     if (isInCart) {
-      removefromCart(prod.id);
-      settotalAmnt(totalAmnt - prodTotal);
-      settotalQnty(totalQnty - 1);
-
+      dispatch(removeFromCart(prod.id));
+    } else {
+      dispatch(addToCart(prod));
     }
-    else {
-      addtoCart(prod);
-      settotalAmnt(totalAmnt + prod.price);
-      settotalQnty(totalQnty + 1);
-    }
-
   };
 
   return (
@@ -36,4 +31,3 @@ function Card({ prod, id }) {
 }
 
 export default Card;
-

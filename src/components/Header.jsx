@@ -1,11 +1,10 @@
-import React, { useContext } from 'react'
-import { createContext } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import MyContext from './MyContext'
+import { useSelector } from 'react-redux'
 
 function Header() {
 	const navigate = useNavigate()
-	const { cartTotal } = useContext(MyContext);
+	const cartTotal = useSelector((state) => state.product.cartTotal);
 	return (
 		<>
 			<div className='header-main'>
@@ -24,5 +23,3 @@ function Header() {
 }
 
 export default Header
-
-

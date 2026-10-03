@@ -1,19 +1,17 @@
-import React, { useContext, useState } from 'react'
-import MyContext from './MyContext';
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { updateQuantity } from '../slice/productSlice';
 
 function CardForCart({ prod }) {
-  const [prodTotal, setprodTotal] = useState(prod.price);
-  const [selectedValue, setSelectedValue] = useState(1);
-  const [customMode, setCustomMode] = useState(false); 
-  const { totalAmnt, settotalAmnt, settotalQnty, totalQnty } = useContext(MyContext);
+  const dispatch = useDispatch();
+  const [selectedValue, setSelectedValue] = useState(prod.qty || 1);
+  const [customMode, setCustomMode] = useState(false);
+  const prodTotal = prod.price * selectedValue;
 
   const HandleChange = (e) => {
     const qty = Number(e.target.value);
     setSelectedValue(qty);
-    const newTotal = prod.price * qty;
-    setprodTotal(newTotal);
-    settotalAmnt(totalAmnt - prodTotal + newTotal);
-    settotalQnty(totalQnty - selectedValue + qty);
+    dispatch(updateQuantity({ id: prod.id, qty }));
   };
 
   return (
